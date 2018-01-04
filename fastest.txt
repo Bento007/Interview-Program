@@ -1,0 +1,106 @@
+C:\Miniconda3\envs\mini27\python.exe C:/Users/trent/PycharmProjects/FencingPool/runner.py
+starting...
+         501004 function calls in 0.317 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.317    0.317 <string>:1(<module>)
+    78000    0.019    0.000    0.019    0.000 fencer.py:25(__lt__)
+    24000    0.015    0.000    0.039    0.000 fencer.py:53(__init__)
+    24000    0.022    0.000    0.023    0.000 fencer.py:8(__init__)
+        1    0.005    0.005    0.317    0.317 runner.py:4(perf_test)
+     4000    0.001    0.000    0.001    0.000 tournament.py:10(__init__)
+     1000    0.020    0.000    0.055    0.000 tournament.py:119(_populatePools)
+    34000    0.012    0.000    0.014    0.000 tournament.py:147(_atPoolLimit)
+    24000    0.015    0.000    0.019    0.000 tournament.py:16(addParticipant)
+     1000    0.001    0.000    0.001    0.000 tournament.py:49(__init__)
+     1000    0.002    0.000    0.311    0.000 tournament.py:58(create)
+     1000    0.091    0.000    0.193    0.000 tournament.py:66(_readRoster)
+     1000    0.011    0.000    0.014    0.000 tournament.py:76(_calculateSchoolMaxPerPool)
+     1000    0.001    0.000    0.045    0.000 tournament.py:87(_sortParticipantsByRank)
+    24000    0.002    0.000    0.002    0.000 tournament.py:91(<lambda>)
+     1000    0.001    0.000    0.001    0.000 tournament.py:93(_calculatePoolSize)
+     1000    0.000    0.000    0.000    0.000 {len}
+     7000    0.001    0.000    0.001    0.000 {math.ceil}
+    52000    0.004    0.000    0.004    0.000 {method 'append' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+    74000    0.006    0.000    0.006    0.000 {method 'setdefault' of 'dict' objects}
+     1000    0.022    0.000    0.044    0.000 {method 'sort' of 'list' objects}
+    24000    0.007    0.000    0.007    0.000 {method 'split' of 'str' objects}
+    96000    0.007    0.000    0.007    0.000 {method 'strip' of 'str' objects}
+    24000    0.002    0.000    0.002    0.000 {method 'upper' of 'str' objects}
+     1000    0.047    0.000    0.047    0.000 {open}
+     2001    0.001    0.000    0.001    0.000 {range}
+
+
+         1044004 function calls in 0.543 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.543    0.543 <string>:1(<module>)
+   203000    0.046    0.000    0.046    0.000 fencer.py:25(__lt__)
+    48000    0.029    0.000    0.070    0.000 fencer.py:53(__init__)
+    48000    0.038    0.000    0.042    0.000 fencer.py:8(__init__)
+        1    0.011    0.011    0.543    0.543 runner.py:4(perf_test)
+     8000    0.002    0.000    0.002    0.000 tournament.py:10(__init__)
+     1000    0.035    0.000    0.104    0.000 tournament.py:119(_populatePools)
+    58000    0.023    0.000    0.028    0.000 tournament.py:147(_atPoolLimit)
+    48000    0.030    0.000    0.036    0.000 tournament.py:16(addParticipant)
+     1000    0.001    0.000    0.001    0.000 tournament.py:49(__init__)
+     1000    0.002    0.000    0.532    0.001 tournament.py:58(create)
+     1000    0.133    0.000    0.288    0.000 tournament.py:66(_readRoster)
+     1000    0.025    0.000    0.033    0.000 tournament.py:76(_calculateSchoolMaxPerPool)
+     1000    0.001    0.000    0.103    0.000 tournament.py:87(_sortParticipantsByRank)
+    48000    0.004    0.000    0.004    0.000 tournament.py:91(<lambda>)
+     1000    0.001    0.000    0.001    0.000 tournament.py:93(_calculatePoolSize)
+     1000    0.000    0.000    0.000    0.000 {len}
+    31000    0.002    0.000    0.002    0.000 {math.ceil}
+   104000    0.008    0.000    0.008    0.000 {method 'append' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+   148000    0.014    0.000    0.014    0.000 {method 'setdefault' of 'dict' objects}
+     1000    0.052    0.000    0.102    0.000 {method 'sort' of 'list' objects}
+    48000    0.015    0.000    0.015    0.000 {method 'split' of 'str' objects}
+   192000    0.014    0.000    0.014    0.000 {method 'strip' of 'str' objects}
+    48000    0.004    0.000    0.004    0.000 {method 'upper' of 'str' objects}
+     1000    0.051    0.000    0.051    0.000 {open}
+     2001    0.001    0.000    0.001    0.000 {range}
+
+
+         267004 function calls in 0.222 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.222    0.222 <string>:1(<module>)
+    31000    0.008    0.000    0.008    0.000 fencer.py:25(__lt__)
+    13000    0.009    0.000    0.023    0.000 fencer.py:53(__init__)
+    13000    0.013    0.000    0.014    0.000 fencer.py:8(__init__)
+        1    0.004    0.004    0.222    0.222 runner.py:4(perf_test)
+     2000    0.001    0.000    0.001    0.000 tournament.py:10(__init__)
+     1000    0.011    0.000    0.031    0.000 tournament.py:119(_populatePools)
+    14000    0.006    0.000    0.008    0.000 tournament.py:147(_atPoolLimit)
+    13000    0.009    0.000    0.011    0.000 tournament.py:16(addParticipant)
+     1000    0.001    0.000    0.001    0.000 tournament.py:49(__init__)
+     1000    0.002    0.000    0.218    0.000 tournament.py:58(create)
+     1000    0.072    0.000    0.151    0.000 tournament.py:66(_readRoster)
+     1000    0.009    0.000    0.011    0.000 tournament.py:76(_calculateSchoolMaxPerPool)
+     1000    0.001    0.000    0.022    0.000 tournament.py:87(_sortParticipantsByRank)
+    13000    0.001    0.000    0.001    0.000 tournament.py:91(<lambda>)
+     1000    0.001    0.000    0.001    0.000 tournament.py:93(_calculatePoolSize)
+     1000    0.000    0.000    0.000    0.000 {len}
+    10000    0.001    0.000    0.001    0.000 {math.ceil}
+    28000    0.003    0.000    0.003    0.000 {method 'append' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+    40000    0.004    0.000    0.004    0.000 {method 'setdefault' of 'dict' objects}
+     1000    0.011    0.000    0.021    0.000 {method 'sort' of 'list' objects}
+    13000    0.004    0.000    0.004    0.000 {method 'split' of 'str' objects}
+    52000    0.004    0.000    0.004    0.000 {method 'strip' of 'str' objects}
+    13000    0.001    0.000    0.001    0.000 {method 'upper' of 'str' objects}
+     1000    0.046    0.000    0.046    0.000 {open}
+     2001    0.001    0.000    0.001    0.000 {range}
+
+
+
+Process finished with exit code 0
