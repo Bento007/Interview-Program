@@ -19,3 +19,4 @@ if __name__ == "__main__":
             t = Tournament(file)
             t.create()
             result.write("%s" % (t))
+            print("%s" % (t))

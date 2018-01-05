@@ -39,25 +39,14 @@ class test_Tournament(unittest.TestCase):
                 self.assertLessEqual(i.schools[key], self.t.schoolPoolMax[key])
 
     def test__calculatePoolSize(self):
-        self.t.participants = [x for x in range(12)]
-        self.t._calculatePoolSize()
-        self.assertEqual(self.t.poolCount,2)
-        self.assertEqual(self.t.poolMax, 6)
+        subtests = [(12,2,6),(13,2,7),(16,2,8),(17,3,6)]
 
-        self.t.participants = [x for x in range(13)]
-        self.t._calculatePoolSize()
-        self.assertEqual(self.t.poolCount,2)
-        self.assertEqual(self.t.poolMax, 7)
-
-        self.t.participants = [x for x in range(16)]
-        self.t._calculatePoolSize()
-        self.assertEqual(self.t.poolCount,2)
-        self.assertEqual(self.t.poolMax, 8)
-
-        self.t.participants = [x for x in range(17)]
-        self.t._calculatePoolSize()
-        self.assertEqual(self.t.poolCount,3)
-        self.assertEqual(self.t.poolMax, 6)
+        for totalEntries, poolCount, poolMax in subtests:
+            with self.subTest(totalEntries):
+                self.t.totalEntries = totalEntries
+                self.t._calculatePoolSize()
+                self.assertEqual(self.t.poolCount,poolCount)
+                self.assertEqual(self.t.poolMax, poolMax)
 
 
 

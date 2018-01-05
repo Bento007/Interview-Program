@@ -7,6 +7,8 @@ from math import ceil
 from fencer import Fencer
 
 class Pool():
+    """Tracks the participant in a pool"""
+
     def __init__(self, number=0):
         self.schools = {}
         self.participants = []
@@ -17,7 +19,6 @@ class Pool():
         self.participants.append(participant)
         self.poolSize+=1
         self.schools[participant.school] = self.schools.setdefault(participant.school, 0) + 1
-        # self.schools[participant.school] = students + 1
 
     def removeParticipant(self,participant):
         #check if participant is in pool
@@ -25,7 +26,7 @@ class Pool():
             self.participants.remove(participant)
             self.poolSize-=1
             self.schools[participant.school] = self.schools[participant.school] - 1
-            # self.schools[participant.school] = students - 1
+
         except ValueError:
             print("Participant Not In Pool")
 
@@ -70,7 +71,7 @@ class Tournament():
                 try:
                     self.participants.append(Fencer( *[i.strip() for i in line.split(',')] ) )
                 except ValueError as error:
-                    print ('%s. Invalid data: "%s"' % (error,line))
+                    print ('File:%s caused %s. Invalid data: "%s"' % (self.CSVFile, error,line))
         self.totalEntries = len(self.participants)
 
     def _calculateSchoolMaxPerPool(self):
